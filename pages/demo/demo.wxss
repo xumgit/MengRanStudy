@@ -1,0 +1,39 @@
+/* pages/demo/demo.wxss */
+
+.page {
+	margin: 0 10rpx 0 10rpx;
+	border: 1rpx solid #678932;
+}
+
+.title {
+	background-color: #abcdef;
+	margin-top: 5rpx;
+}
+
+.btn {
+	margin: 10rpx 10rpx 10rpx 10rpx;
+}
+
+.titleMarginSeq {
+	margin-top: 0rpx;
+}
+
+.imageQuestion {
+	width: 420rpx;
+	height: 150rpx;
+	margin-left: 20rpx;
+}
+
+.radioEven {
+  	background-color: #ffeeee;
+}
+
+.marginTop {
+	border-radius: 5rpx;
+  	margin-top: 4rpx;
+}
+
+.choiceAnswer {
+	display: inline;
+	padding-top: 10rpx;
+}

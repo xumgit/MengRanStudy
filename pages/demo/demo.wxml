@@ -1,0 +1,25 @@
+<!--pages/demo/demo.wxml-->
+<view class="page">
+  <view wx:for="{{items}}" wx:for-index="idx" wx:for-item="itemName" wx:key="seq">
+    <view class="title {{itemName.seq == '01' ? 'titleMarginSeq' : ''}}">
+      {{itemName.seq}}: {{itemName.question}}
+    </view>
+    <view>
+      <image src="{{itemName.url}}" class="imageQuestion"></image>
+    </view>   
+    <radio-group bindchange="radioChange" data-seq="{{itemName.seq}}">
+      <view class="radioEven marginTop" 
+            wx:for="{{itemName.choices}}"
+            wx:for-index="itemChoiceIndex" 
+            wx:for-item="itemChoiceItem"
+            wx:key="name">
+            <radio value="{{itemChoiceItem.name}}">
+              <text>{{itemChoiceItem.name}}. </text><text>{{itemChoiceItem.value}}</text>
+            </radio>
+      </view>
+    </radio-group>
+  </view>
+</view>
+<view class="btn">
+  <button type="primary" bindtap="submitAnswer">提交</button>
+</view>
